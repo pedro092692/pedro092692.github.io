@@ -1,0 +1,485 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* nav section */
+
+nav{
+    background-color: #F4F4F3;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 48px;
+}
+
+nav .menu{
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 24px;
+}
+
+nav .menu i{
+    display: none;
+}
+
+/* hero/cover photo */
+.cover{
+    display: flex;
+    align-items: end;
+    background-image: url('../images/cover_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 48px;
+    height: 378px;
+}
+
+.cover .buttons{
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+}
+
+.cover .buttons button{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #141E46;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 24px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+}
+
+/* profile photo */
+.profile_photo{
+    position: absolute;
+    height: 215px;
+    width: 215px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 48px;
+    top: 350px;
+    box-shadow: 0px 8px 9px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* main section  */
+
+/* section about */
+
+.about{
+    display:flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.about .container_personal_info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 140px 48px 16px 48px;
+
+}
+
+.about .container_personal_info .username{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 102px;
+}
+
+.about .container_personal_info .username .username_header{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* user name title */
+.about .container_personal_info .username .username_header h2{
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+}
+
+/* follow button */
+.about .container_personal_info .username .username_header button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 24px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #414969;
+    border-radius: 4px;
+    max-height: 40px;
+
+}
+
+/* hashtag */
+.about .container_personal_info .username .hashtag{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #1C1C1C;
+
+}
+
+
+/* achievements */
+.about .container_personal_info .achievements{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+.about .container_personal_info .achievements .achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .container_personal_info .achievements .achievement h2{
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.about .container_personal_info .achievements .achievement p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 125%;
+}
+
+
+/* about me */
+.about .about_section{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.about .about_section h2{
+    display: flex;
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.about .about_section .about_info{
+    flex-grow: 1;
+    display:flex;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+.about .links{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about .links h2{
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.about .links .links_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .links .links_list .link_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    color: #9694A3;
+}
+
+.about .links .links_list .link_item p{
+    font-size: 16px;
+}
+
+
+/* portfolio */
+.about .portfolio{
+    background-color: #F4F3F3;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 140px 0px 16px 0px;
+    box-shadow: -5px -10px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.about .portfolio .portfolio_header{
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1C1C1C;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 48px;
+    height: 48px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.about .portfolio .portfolio_header #portfolio{
+    border-bottom: 3px solid rgba(0, 0, 0, 0.7);
+}
+
+.about .portfolio .portfolio_header #languages{
+    color: #7B798B;
+}
+
+.about .portfolio .portfolio_header #experience{
+    color: #7B798B;
+}
+
+/* cards */
+
+.about .portfolio .cards_container{
+    padding: 0 48px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.about .portfolio .cards_container .card_container{
+    display: flex;
+    gap: 32px;
+}
+
+.card{
+    flex-grow: 1;
+    background-color: #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 10px;
+    overflow:hidden;
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card .card_img{
+    height: 160px;
+    background-image: url(../images/card_1_img.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card #card_2{
+    background-image: url(../images/card_2_img.jpg);
+}
+
+
+.card #card_3{
+    background-image: url(../images/card_3_img.jpg);
+}
+
+
+
+.card .card_content{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding: 0px 16px 16px 16px;
+}
+
+.card .card_content h3{
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+.card .card_content p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 125%;
+    color: #1C1C1C;
+}
+
+.card .card_content button{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14;
+    color: white;
+    line-height: 125%;
+    text-transform: uppercase;
+    padding: 8px 24px;
+    background-color: rgba(255, 146, 9, 0.8);
+    border-radius: 4px;
+
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    background-color: #000;
+}
+
+footer .footer_menu{
+    display: flex;
+    gap: 16px;
+}
+
+footer .footer_menu a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* media querys */
+
+@media only screen and (max-width: 1000px) {
+    .card_container{
+        flex-direction: column;
+    }
+    .about .portfolio .portfolio_header{
+        padding-bottom: 140px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .about .portfolio .portfolio_header #portfolio{
+        border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+    }
+    #works{
+        padding-top: 56px;
+    }
+}
+    
+@media only screen and (max-width: 980px) {
+    .about .container_personal_info .username .username_header{
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .about .container_personal_info .achievements{
+        margin-top: 48px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+ .about{
+    flex-direction: column;
+ }
+ .about .portfolio{
+    box-shadow: none;
+    padding-bottom: 32px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .profile_photo{
+        position: absolute;
+        height: 215px;
+        width: 215px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-left: 25%;
+        top: 95px;
+        box-shadow: 0px 8px 9px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .cover .buttons{
+        justify-content: center;
+    }
+
+    .about .container_personal_info{
+        padding-top: 32px;
+    
+    }
+}
+
+
+
+@media only screen and (max-width: 525px) {
+    nav .menu a{
+        display: none;
+    }
+    nav .menu .hamburguer{
+        display: block;
+    }
+    footer{
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 410px) {
+    .about .links .links_list{
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+    }
+    .about .container_personal_info .achievements{
+        margin-top: 64px;
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;   
+    }
+    footer{
+        align-items: start;
+    }
+    footer .footer_menu{
+        flex-direction: column;
+    }
+}
+
+
+
+
